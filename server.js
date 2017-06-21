@@ -106,7 +106,7 @@ function scrapeEmag(numberOfPages){
 
         getPages(category, keywords, catName);
 
-        function getPages(category, keywords, catName){
+        function getPages(category, keywords, catName){ 
             for(var j = 1; j<=numberOfPages; j++){
                 page = pageTemplate.replace("{0}", j.toString());
                 url = rootUrl + "/" + category + "/" + page;
